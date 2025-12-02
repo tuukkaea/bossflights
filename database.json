@@ -263,7 +263,7 @@
       "id": 1,
       "name": "Romeo",
       "battery_level": 10,
-      "current_location": 12,
+      "current_location": 1,
       "target_airport": 15,
       "game_started_at": "2025-12-02T10:00:00Z",
       "game_completed": false,
@@ -460,7 +460,7 @@
       "is_boss_airport": false,
       "battery_cost": 10,
       "order_sequence": 2,
-      "visited_at": null
+      "visited_at": "2025-12-02T10:00:00Z"
     },
     {
       "id": 3,
@@ -468,7 +468,7 @@
       "airport_ident": "EGLL",
       "difficulty_level": "medium",
       "is_starting_airport": false,
-      "is_boss_airport": false,
+      "is_boss_airport": true,
       "battery_cost": 15,
       "order_sequence": 3,
       "visited_at": null
@@ -479,7 +479,7 @@
       "airport_ident": "KJFK",
       "difficulty_level": "medium",
       "is_starting_airport": false,
-      "is_boss_airport": true,
+      "is_boss_airport": false,
       "battery_cost": 20,
       "order_sequence": 4,
       "visited_at": null
