@@ -38,10 +38,22 @@ function initializeGame() {
 
     fetchDatabase().then(data => {
         console.log('db:', data);
-        renderAirportsOnMap(data.airports); 
+        renderAirportsOnMap(data.airports);
+        updatePlayerData(data.players[0])
     });
 }
 
+function updatePlayerData(player){
+    const playerName = document.getElementById('player-name');
+    playerName.textContent = player.name
+    const batteryLevel = document.getElementById('player-battery');
+    batteryLevel.textContent = player.battery_level + '%'
+    const playerDifficulty = document.getElementById('difficulty');
+    playerDifficulty.textContent = player.difficulty_level
+}
+
+
+    
 
 
 
