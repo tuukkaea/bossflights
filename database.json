@@ -1,0 +1,541 @@
+{
+  "airports": [
+    {
+      "id": 1,
+      "ident": "EHAM",
+      "type": "large_airport",
+      "name": "Amsterdam Airport Schiphol",
+      "latitude_deg": 52.3086013793945,
+      "longitude_deg": 4.76389980316162,
+      "elevation_ft": 13,
+      "continent": "EU",
+      "iso_country": "NL",
+      "iso_region": "NL-NH",
+      "municipality": "Amsterdam",
+      "scheduled_service": "yes",
+      "gps_code": "EHAM",
+      "iata_code": "AMS",
+      "home_link": "https://www.schiphol.nl/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "keywords": "Netherlands"
+    },
+    {
+      "id": 2,
+      "ident": "ESSA",
+      "type": "large_airport",
+      "name": "Stockholm Arlanda Airport",
+      "latitude_deg": 59.651901245117,
+      "longitude_deg": 17.9186000823975,
+      "elevation_ft": 137,
+      "continent": "EU",
+      "iso_country": "SE",
+      "iso_region": "SE-AB",
+      "municipality": "Stockholm",
+      "scheduled_service": "yes",
+      "gps_code": "ESSA",
+      "iata_code": "ARN",
+      "home_link": "https://www.swedavia.com/arlanda/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "keywords": "Sweden"
+    },
+    {
+      "id": 3,
+      "ident": "KATL",
+      "type": "large_airport",
+      "name": "Hartsfield Jackson Atlanta International Airport",
+      "latitude_deg": 33.6366996765,
+      "longitude_deg": -84.4281005859375,
+      "elevation_ft": 1026,
+      "continent": "NA",
+      "iso_country": "US",
+      "iso_region": "US-GA",
+      "municipality": "Atlanta",
+      "scheduled_service": "yes",
+      "gps_code": "KATL",
+      "iata_code": "ATL",
+      "local_code": "ATL",
+      "home_link": "https://www.atl.com/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "keywords": "United States"
+    },
+    {
+      "id": 12,
+      "ident": "EFHK",
+      "type": "large_airport",
+      "name": "Helsinki Vantaa Airport",
+      "latitude_deg": 60.317199707031,
+      "longitude_deg": 24.963300704956,
+      "elevation_ft": 179,
+      "continent": "EU",
+      "iso_country": "FI",
+      "iso_region": "FI-01",
+      "municipality": "Helsinki",
+      "scheduled_service": "yes",
+      "gps_code": "EFHK",
+      "iata_code": "HEL",
+      "home_link": "https://www.finavia.fi/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "keywords": "Finland"
+    },
+    {
+      "id": 13,
+      "ident": "RJTT",
+      "type": "large_airport",
+      "name": "Tokyo Haneda Airport",
+      "latitude_deg": 35.5522994995,
+      "longitude_deg": 139.779998779,
+      "elevation_ft": 35,
+      "continent": "AS",
+      "iso_country": "JP",
+      "iso_region": "JP-13",
+      "municipality": "Tokyo",
+      "scheduled_service": "yes",
+      "gps_code": "RJTT",
+      "iata_code": "HND",
+      "home_link": "https://www.haneda-airport.jp/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "keywords": "Japan"
+    },
+    {
+      "id": 15,
+      "ident": "KJFK",
+      "type": "large_airport",
+      "name": "John F Kennedy International Airport",
+      "latitude_deg": 40.6398010254,
+      "longitude_deg": -73.7789001465,
+      "elevation_ft": 13,
+      "continent": "NA",
+      "iso_country": "US",
+      "iso_region": "US-NY",
+      "municipality": "New York",
+      "scheduled_service": "yes",
+      "gps_code": "KJFK",
+      "iata_code": "JFK",
+      "local_code": "JFK",
+      "home_link": "https://www.jfkairport.com/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "keywords": "United States"
+    },
+    {
+      "id": 18,
+      "ident": "EGLL",
+      "type": "large_airport",
+      "name": "London Heathrow Airport",
+      "latitude_deg": 51.4706,
+      "longitude_deg": -0.461941,
+      "elevation_ft": 83,
+      "continent": "EU",
+      "iso_country": "GB",
+      "iso_region": "GB-ENG",
+      "municipality": "London",
+      "scheduled_service": "yes",
+      "gps_code": "EGLL",
+      "iata_code": "LHR",
+      "home_link": "https://www.heathrow.com/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "keywords": "United Kingdom"
+    },
+    {
+      "id": 25,
+      "ident": "WSSS",
+      "type": "large_airport",
+      "name": "Singapore Changi Airport",
+      "latitude_deg": 1.35019004345,
+      "longitude_deg": 103.994003296,
+      "elevation_ft": 22,
+      "continent": "AS",
+      "iso_country": "SG",
+      "iso_region": "SG-01",
+      "municipality": "Singapore",
+      "scheduled_service": "yes",
+      "gps_code": "WSSS",
+      "iata_code": "SIN",
+      "home_link": "https://www.changiairport.com/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Singapore_Changi_Airport",
+      "keywords": "Singapore"
+    },
+    {
+      "id": 26,
+      "ident": "YSSY",
+      "type": "large_airport",
+      "name": "Sydney Kingsford Smith Airport",
+      "latitude_deg": -33.9468994140625,
+      "longitude_deg": 151.177001953125,
+      "elevation_ft": 21,
+      "continent": "OC",
+      "iso_country": "AU",
+      "iso_region": "AU-NSW",
+      "municipality": "Sydney",
+      "scheduled_service": "yes",
+      "gps_code": "YSSY",
+      "iata_code": "SYD",
+      "home_link": "https://www.sydneyairport.com.au/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Kingsford_Smith_Airport",
+      "keywords": "Australia"
+    },
+    {
+      "id": 9,
+      "ident": "OMDB",
+      "type": "large_airport",
+      "name": "Dubai International Airport",
+      "latitude_deg": 25.2527999878,
+      "longitude_deg": 55.3643989563,
+      "elevation_ft": 62,
+      "continent": "AS",
+      "iso_country": "AE",
+      "iso_region": "AE-DU",
+      "municipality": "Dubai",
+      "scheduled_service": "yes",
+      "gps_code": "OMDB",
+      "iata_code": "DXB",
+      "home_link": "https://www.dubaiairports.ae/",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "keywords": "UAE"
+    }
+  ],
+  "countries": [
+    {
+      "iso_country": "NL",
+      "name": "Netherlands",
+      "continent": "EU",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Netherlands",
+      "keywords": "Holland"
+    },
+    {
+      "iso_country": "SE",
+      "name": "Sweden",
+      "continent": "EU",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Sweden",
+      "keywords": "Flygplatserna"
+    },
+    {
+      "iso_country": "US",
+      "name": "United States",
+      "continent": "NA",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/United_States",
+      "keywords": "America"
+    },
+    {
+      "iso_country": "FI",
+      "name": "Finland",
+      "continent": "EU",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Finland",
+      "keywords": "Lentokentät"
+    },
+    {
+      "iso_country": "JP",
+      "name": "Japan",
+      "continent": "AS",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Japan",
+      "keywords": "Nippon"
+    },
+    {
+      "iso_country": "GB",
+      "name": "United Kingdom",
+      "continent": "EU",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/United_Kingdom",
+      "keywords": "Great Britain"
+    },
+    {
+      "iso_country": "SG",
+      "name": "Singapore",
+      "continent": "AS",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Singapore",
+      "keywords": ""
+    },
+    {
+      "iso_country": "AU",
+      "name": "Australia",
+      "continent": "OC",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/Australia",
+      "keywords": ""
+    },
+    {
+      "iso_country": "AE",
+      "name": "United Arab Emirates",
+      "continent": "AS",
+      "wikipedia_link": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+      "keywords": "UAE"
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "name": "Eeli",
+      "battery_level": 100,
+      "current_location": 12,
+      "target_airport": 15,
+      "game_started_at": "2025-12-02T10:00:00Z",
+      "game_completed": false,
+      "difficulty_level": "medium"
+    }
+  ],
+  "question_tasks": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "correct_answer": "Paris",
+      "difficulty_level": "easy"
+    },
+    {
+      "id": 2,
+      "question": "What is the largest ocean on Earth?",
+      "correct_answer": "Pacific Ocean",
+      "difficulty_level": "easy"
+    },
+    {
+      "id": 3,
+      "question": "In what year did World War II end?",
+      "correct_answer": "1945",
+      "difficulty_level": "medium"
+    },
+    {
+      "id": 4,
+      "question": "What is the chemical symbol for gold?",
+      "correct_answer": "Au",
+      "difficulty_level": "medium"
+    },
+    {
+      "id": 5,
+      "question": "What is the speed of light in vacuum (in m/s)?",
+      "correct_answer": "299792458",
+      "difficulty_level": "hard"
+    }
+  ],
+  "multiple_choice_questions": [
+    {
+      "id": 1,
+      "question": "Which airport has the IATA code LHR?",
+      "difficulty_level": "easy",
+      "answers": [
+        {
+          "id": 1,
+          "answer": "London Heathrow Airport",
+          "is_correct": true
+        },
+        {
+          "id": 2,
+          "answer": "Los Angeles International Airport",
+          "is_correct": false
+        },
+        {
+          "id": 3,
+          "answer": "London Gatwick Airport",
+          "is_correct": false
+        },
+        {
+          "id": 4,
+          "answer": "Liverpool John Lennon Airport",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What is the elevation of Tokyo Haneda Airport in feet?",
+      "difficulty_level": "medium",
+      "answers": [
+        {
+          "id": 5,
+          "answer": "35",
+          "is_correct": true
+        },
+        {
+          "id": 6,
+          "answer": "141",
+          "is_correct": false
+        },
+        {
+          "id": 7,
+          "answer": "13",
+          "is_correct": false
+        },
+        {
+          "id": 8,
+          "answer": "179",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which continent is Singapore Changi Airport located on?",
+      "difficulty_level": "easy",
+      "answers": [
+        {
+          "id": 9,
+          "answer": "Asia",
+          "is_correct": true
+        },
+        {
+          "id": 10,
+          "answer": "Europe",
+          "is_correct": false
+        },
+        {
+          "id": 11,
+          "answer": "Oceania",
+          "is_correct": false
+        },
+        {
+          "id": 12,
+          "answer": "Africa",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which of these airports is NOT in the United States?",
+      "difficulty_level": "medium",
+      "answers": [
+        {
+          "id": 13,
+          "answer": "Sydney Kingsford Smith Airport",
+          "is_correct": true
+        },
+        {
+          "id": 14,
+          "answer": "JFK International Airport",
+          "is_correct": false
+        },
+        {
+          "id": 15,
+          "answer": "Hartsfield Jackson Atlanta Airport",
+          "is_correct": false
+        },
+        {
+          "id": 16,
+          "answer": "O'Hare International Airport",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the GPS code for Dubai International Airport?",
+      "difficulty_level": "hard",
+      "answers": [
+        {
+          "id": 17,
+          "answer": "OMDB",
+          "is_correct": true
+        },
+        {
+          "id": 18,
+          "answer": "ODXB",
+          "is_correct": false
+        },
+        {
+          "id": 19,
+          "answer": "DXBI",
+          "is_correct": false
+        },
+        {
+          "id": 20,
+          "answer": "OMDE",
+          "is_correct": false
+        }
+      ]
+    }
+  ],
+  "players_airports": [
+    {
+      "id": 1,
+      "player_id": 1,
+      "airport_ident": "EFHK",
+      "difficulty_level": "easy",
+      "is_starting_airport": true,
+      "is_boss_airport": false,
+      "battery_cost": 0,
+      "order_sequence": 1,
+      "visited_at": "2025-12-02T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "player_id": 1,
+      "airport_ident": "EHAM",
+      "difficulty_level": "easy",
+      "is_starting_airport": false,
+      "is_boss_airport": false,
+      "battery_cost": 10,
+      "order_sequence": 2,
+      "visited_at": null
+    },
+    {
+      "id": 3,
+      "player_id": 1,
+      "airport_ident": "EGLL",
+      "difficulty_level": "medium",
+      "is_starting_airport": false,
+      "is_boss_airport": false,
+      "battery_cost": 15,
+      "order_sequence": 3,
+      "visited_at": null
+    },
+    {
+      "id": 4,
+      "player_id": 1,
+      "airport_ident": "KJFK",
+      "difficulty_level": "medium",
+      "is_starting_airport": false,
+      "is_boss_airport": true,
+      "battery_cost": 20,
+      "order_sequence": 4,
+      "visited_at": null
+    }
+  ],
+  "challenges": [
+    {
+      "id": 1,
+      "challenge_id": "CH001",
+      "player_id": 1,
+      "airport_ident": "EHAM",
+      "challenge_type": "multiple_choice",
+      "difficulty_level": "easy",
+      "completed": false,
+      "success": false,
+      "completed_at": null
+    },
+    {
+      "id": 2,
+      "challenge_id": "CH002",
+      "player_id": 1,
+      "airport_ident": "EGLL",
+      "challenge_type": "question",
+      "difficulty_level": "medium",
+      "completed": false,
+      "success": false,
+      "completed_at": null
+    },
+    {
+      "id": 3,
+      "challenge_id": "CH003",
+      "player_id": 1,
+      "airport_ident": "KJFK",
+      "challenge_type": "boss",
+      "difficulty_level": "hard",
+      "completed": false,
+      "success": false,
+      "completed_at": null
+    }
+  ],
+  "game_sessions": [
+    {
+      "id": 1,
+      "player_id": 1,
+      "session_start": "2025-12-02T10:00:00Z",
+      "session_end": null,
+      "total_challenges_completed": 0,
+      "final_battery_level": null,
+      "game_won": false
+    }
+  ],
+  "challenge_results": [],
+  "game_state": {
+    "current_player": 1,
+    "current_session": 1,
+    "is_game_active": true,
+    "next_challenge": "CH001"
+  }
+}
