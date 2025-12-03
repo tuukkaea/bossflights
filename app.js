@@ -154,6 +154,7 @@ function showRandomChallenge(){
     }
 
 function submitMultiplechoiceAnswer(isCorrect){
+    answerOptions.innerHTML = "";
     const resultElement = document.getElementById('challenge-result')
     const buttons = document.querySelectorAll(".answer-option")
     if(isCorrect){
@@ -164,6 +165,27 @@ function submitMultiplechoiceAnswer(isCorrect){
         resultElement.textContent = "Incorrect answer!"
         resultElement.className = "challenge-result incorrect"
     }
+}
+
+window.submitOpenAnswer = function(){
+    console.log("toimiiko")
+    const resultElement = document.getElementById('challenge-result')
+    const userAnswer = document.getElementById('answer-input').value.trim()
+    if (!userAnswer){
+        alert("Answer the question!")
+        return
+    }
+    const correctAnswer = currentChallenge.data.correct_answer.toLowerCase()
+    const isCorrect = userAnswer.toLowerCase() === correctAnswer
+
+    if(isCorrect){
+        resultElement.textContent = "Correct answer!"
+        resultElement.className = "challenge-result correct"
+    } else {
+        resultElement.textContent = "Incorrect answer! The correct answer is: " + currentChallenge.data.correct_answer
+        resultElement.className = "challenge-result incorrect"
+    }
+    resultElement.style.display = "block"
 }
 
 
