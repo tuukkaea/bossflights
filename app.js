@@ -2,6 +2,10 @@ import { calculateDistance, calculateBearing, getCompassDirection } from './util
 
 let map;
 
+let gameData = null
+
+let currentChallenge = null
+
 async function fetchDatabase() {
     try {
         let response = await fetch('database.json');
@@ -41,7 +45,10 @@ function initializeGame() {
     fetchDatabase().then(data => {
         console.log('db:', data);
         renderAirportsOnMap(data.airports);
+        gameData = data
         updatePlayerData(data.players[0], data.airports, data.players_airports); 
+        showRandomChallenge()
+        
     });
 }
 
@@ -99,5 +106,66 @@ function updatePlayerData(player, airports, playersAirports){
         }
     } 
 }
+
+function showRandomChallenge(){
+    const challengeSection = document.getElementById('challenge-section')
+
+    const challengeQuestion = document.getElementById('challenge-question')
+
+    const openAnswerSection = document.getElementById('open-answer-section')
+
+    const multipleChoiceSection = document.getElementById('multiple-choice-section')
+
+    const challengeType = Math.random() > 0.5 ? "open" : "multiple_choice"; 
+    if (challengeType === "open" && gameData.question_tasks.length > 0){
+        const randomQuestion = gameData.question_tasks[Math.floor(Math.random()*gameData.question_tasks.length)];
+        currentChallenge = {
+            type:"open",
+            data:randomQuestion
+        }
+        challengeQuestion.textContent = randomQuestion.question
+        openAnswerSection.style.display ="block"
+        multipleChoiceSection.style.display ="none"
+    }
+    
+    else if(gameData.multiple_choice_questions.length>0){
+        const randomMultipleChoiceQuestion = gameData.multiple_choice_questions[Math.floor(Math.random()*gameData.multiple_choice_questions.length)];
+        currentChallenge = {
+            type:"multiple_choice",
+            data:randomMultipleChoiceQuestion
+        }
+        challengeQuestion.textContent = randomMultipleChoiceQuestion.question
+        openAnswerSection.style.display ="none"
+        multipleChoiceSection.style.display ="block"
+
+        const answerOptions = document.getElementById('answer-choice-options')
+        randomMultipleChoiceQuestion.answers.forEach(answer=>{
+            const button = document.createElement("button")
+            button.textContent = answer.answer
+            button.className = "answer-option"
+            button.onclick = () => submitMultiplechoiceAnswer(answer.is_correct)
+            answerOptions.appendChild(button)
+
+        })
+    }
+
+
+     
+    }
+
+function submitMultiplechoiceAnswer(isCorrect){
+    const resultElement = document.getElementById('challenge-result')
+    const buttons = document.querySelectorAll(".answer-option")
+    if(isCorrect){
+        resultElement.textContent = "Correct answer!"
+        resultElement.className = "challenge-result correct"
+    } else {
+        const correctAnswer = currentChallenge.data.answers.find(a=>a.is_correct)
+        resultElement.textContent = "Incorrect answer!"
+        resultElement.className = "challenge-result incorrect"
+    }
+}
+
+
 
 initializeGame();
